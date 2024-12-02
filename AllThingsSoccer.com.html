@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Allthingssoccer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('Soccerbackground.jpg') no-repeat center center/cover;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header .logo-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            position: relative;
+            background: url('soccer-hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-top: 150px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #e67e22;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-title">
+            <img src="soccerlogo.jpg" alt="All Things Soccer Logo" role="img">
+            <h1>All Things You Need to Know About Soccer</h1>
+        </div>
+        <nav role="navigation">
+            <a href="#home" title="Go to Home Section">Home</a>
+            <a href="#basics" title="Learn about Soccer Basics">Soccer Basics</a>
+            <a href="#history" title="Explore the History of Soccer">History</a>
+            <a href="#players" title="Discover Iconic Soccer Players">Iconic Players</a>
+            <a href="#tournaments" title="Learn about Famous Soccer Tournaments">Famous Tournaments</a>
+            <a href="#clubs" title="Discover Famous Soccer Clubs">Famous Clubs</a>
+            <a href="#funfacts" title="Read Fun Facts about Soccer">Fun Facts</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Welcome to the World of Soccer</h1>
+            <button onclick="window.location.href='#basics'">Explore Now</button>
+        </div>
+
+        <section id="basics" role="region" aria-labelledby="basics-title">
+            <div class="section-title" id="basics-title">Soccer Basics</div>
+            <p>Learn about the rules, positions, and fundamentals of soccer. Understand the game from the ground up!</p>
+            <div class="card">
+                <a href="https://www.soccer.com/guide/how-to-play-soccer-guide-for-beginners" target="_blank">
+                    <img src="howtoplay.jpg" alt="How to play soccer guide" />
+                    <h3>How to Play</h3>
+                    <p>Get to know the essential rules and strategies of the game.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://jobsinfootball.com/blog/soccer-positions/" target="_blank">
+                    <img src="soccerpositions.jpg" alt="Various soccer positions" />
+                    <h3>Positions</h3>
+                    <p>Understand the different positions and their roles on the field.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="history" role="region" aria-labelledby="history-title">
+            <div class="section-title" id="history-title">History of Soccer</div>
+            <p>Explore the fascinating history of soccer, from its origins to modern-day events.</p>
+            <div class="card">
+                <a href="https://www.kids-play-soccer.com/soccermilestones9-12.html" target="_blank">
+                    <img src="milestone.jpg" alt="Key soccer milestones" />
+                    <h3>Milestones</h3>
+                    <p>Key events that shaped the game, from the first World Cup to the rise of FIFA.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026" target="_blank">
+                    <img src="worldcup.jpg" alt="World Cup Soccer" />
+                    <h3>The World Cup</h3>
+                    <p>Learn about the biggest event in soccer history: The FIFA World Cup!</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="players" role="region" aria-labelledby="players-title">
+            <div class="section-title" id="players-title">Iconic Players</div>
+            <p>Discover the legends of soccer, the players who changed the game.</p>
+            <div class="card">
+                <a href="https://www.instagram.com/cristiano/" target="_blank">
+                    <img src="ronaldo.jpg" alt="Cristiano Ronaldo" />
+                    <h3>Cristiano Ronaldo</h3>
+                    <p>One of the greatest players in modern soccer history, known for his skill, dedication, and incredible goal-scoring ability.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.instagram.com/leomessi/?hl=en" target="_blank">
+                    <img src="messi.jpg" alt="Lionel Messi" />
+                    <h3>Lionel Messi</h3>
+                    <p>Arguably the best player of the modern era, known for his incredible skills.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="tournaments" role="region" aria-labelledby="tournaments-title">
+            <div class="section-title" id="tournaments-title">Famous Soccer Tournaments</div>
+            <p>Learn about the biggest and most prestigious soccer tournaments in the world.</p>
+            <div class="card">
+                <a href="https://www.uefa.com/uefachampionsleague/" target="_blank">
+                    <img src="uefa.jpg" alt="UEFA Champions League" />
+                    <h3>UEFA Champions League</h3>
+                    <p>The premier European competition for the best soccer clubs in the world.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="clubs" role="region" aria-labelledby="clubs-title">
+            <div class="section-title" id="clubs-title">Famous Soccer Clubs</div>
+            <p>Explore some of the biggest and most successful soccer clubs in the world.</p>
+            <div class="card">
+                <a href="https://www.realmadrid.com/en-US" target="_blank">
+                    <img src="realmadrid.jpg" alt="Real Madrid" />
+                    <h3>Real Madrid</h3>
+                    <p>One of the most successful soccer clubs in the world with a rich history and multiple championships.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.fcbarcelona.com/en/" target="_blank">
+                    <img src="fcb.jpg" alt="FC Barcelona" />
+                    <h3>FC Barcelona</h3>
+                    <p>Known for their incredible style of play, Barcelona is one of the biggest clubs in the world.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="funfacts" role="region" aria-labelledby="funfacts-title">
+            <div class="section-title" id="funfacts-title">Fun Facts About Soccer</div>
+            <ul>
+                <li>The first-ever soccer match was played in 1863.</li>
+                <li>Brazil has won the most World Cups, with five titles, more than any other nation.</li>
+                <li>The fastest goal in World Cup history was scored just 11 seconds into a match.</li>
+                <li>Soccer players can run up to 7 miles in a single game.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 Allthingssoccer. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
